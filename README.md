@@ -27,7 +27,7 @@ https://localhost:7201/customers?page=2&pageSize=10
 #### Full Example
 ```
 [HttpGet]
-public async Task<IActionResult> Get(int page, int pageSize) // receive order from url parameters
+public async Task<IActionResult> Get(int page, int pageSize) // receive paging information from url parameters
 {
     var queryable = dbContext.Customers.AsQueryable();
     
